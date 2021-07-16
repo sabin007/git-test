@@ -1,0 +1,16 @@
+nav {
+    background-color: #333;
+    text-align: center;
+}
+a {
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: tomato;
+}
