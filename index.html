@@ -19,15 +19,21 @@
 
 <body>
 
-    <header class="jumbotron jumbotron-fluid ">
+    <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row ">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid" />
+                    
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
+
                     <h2>a better way to camp</h2>
+                    <div class="col col-md-4 col-xl-2 mt-4">
+                        <a href="#reserveForm"  
+                             class="btn btn-info btn-lg ">Reserve Campsite</button></a>
+                    </div>    
                 </div>
              </div>
         </div>
@@ -53,26 +59,39 @@
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
         <h2 class="text-sm-right">Discover & Review</h2>
-            </div>
+    </div>      
         <div class="col">
              <div class="media">
              <img class="d-flex mr-3 img-thumbnail"src="img/breadcrumb-trail-thumb.jpg" alt="breadcrumb" />
              <div class="media-body align-self-center">
+                
                 <h3>Our Campsites</h3>
-                <p class=".d-none .d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
-            </div>
+                <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
             </div>
         </div>
-    </div>
+        </div>
+            </div>
+        
+
 
     <div class="row row-content align-items-center">
         <div class="col-sm-4 col-md-3">
-        <h2>Featured Campsites</h2>
-        </div>
+        <h2 class="text-sm-right">Featured Campsites</h2>
+    </div>
         <div class="col">
         <h3>React Lake Campground</h3>
         <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+     </div>
+        <div class="media">
+            <img class="d-flex mr-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="react Lake" />
+            <div class="media-body align-self-right">
+            </div>            
+        </div>
+        
+        
     </div>
+
+   
 
     <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
@@ -88,7 +107,55 @@
             </div>
         </div>
     </div>
-</div>
+
+
+   <div class="row row-content">
+       <div class="col col-sm-6 mx-auto">
+            <div class="card ">
+                <div class="card-header text-white bg-info">
+                <h3>Reserve a Campsite</h3>
+                <div class="card-body">
+                    <form id="reserveForm">
+                        <div class="row">
+                            <div class="col col-sm-6 ">
+                            <label for="numCampers">Number of Campers</label>
+                            <select name="campers" id="numCampers">
+                                <option value="select">select..</option>
+                                <option value="select">1</option>
+                                <option value="select">2</option>
+                                <option value="select">3</option>
+                                <option value="select">4</option>
+                                <option value="select">5</option>
+                                <option value="select">6</option>
+                                
+                            </select>
+                                
+                        </div>
+                        </div>
+                        <div class=" form-group row">
+                            <div class="col col-sm-6">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" placeholder="date"/>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+       </div>
+
+   </div>
+        </div>
+ 
+  
+
 
     <footer class="site-footer">
         <div class="cointainer">
@@ -116,6 +183,7 @@
                     <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                 </div>
              </div>
+        </div>
         </div>
     </footer>
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
