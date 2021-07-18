@@ -28,13 +28,13 @@
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
-
                     <h2>a better way to camp</h2>
+                </div>
                     <div class="col col-md-4 col-xl-2 mt-4">
                         <a href="#reserveForm"  
                              class="btn btn-info btn-lg ">Reserve Campsite</button></a>
                     </div>    
-                </div>
+                
              </div>
         </div>
     </header>
@@ -112,14 +112,14 @@
    <div class="row row-content">
        <div class="col col-sm-6 mx-auto">
             <div class="card ">
-                <div class="card-header text-white bg-info">
-                <h3>Reserve a Campsite</h3>
+                <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
                 <div class="card-body">
                     <form id="reserveForm">
-                        <div class="row">
-                            <div class="col col-sm-6 ">
-                            <label for="numCampers">Number of Campers</label>
-                            <select name="campers" id="numCampers">
+                        <div class=" form-group row">
+                        
+                         <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                            <div class="col">
+                            <select id="numCampers" class="form-control">
                                 <option value="select">select..</option>
                                 <option value="select">1</option>
                                 <option value="select">2</option>
@@ -132,30 +132,24 @@
                                 
                         </div>
                         </div>
-                        <div class=" form-group row">
-                            <div class="col col-sm-6">
-                                <label for="date">Date</label>
-                                <input type="date" id="date" placeholder="date"/>
-
+                        <div class="form-group row">
+                            <label for="date" class="col-sm-6 col-form-label">Date</label>
+                            <div class="col">   
+                                <input type="date" class="form-control" id="date" name="date" placeholder="Date" />
                             </div>
                         </div>
-                        <div class="row">
+                        <!-- Search Button -->
+                        <div class="form-group row">
                             <div class="col">
                                 <button type="submit" class="btn btn-primary">Search</button>
                             </div>
-
                         </div>
                     </form>
                 </div>
-                </div>
             </div>
-       </div>
-
-   </div>
         </div>
- 
-  
-
+    </div>
+</div>
 
     <footer class="site-footer">
         <div class="cointainer">
